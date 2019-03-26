@@ -64,4 +64,20 @@ function displaying(name, theJob){
 }
 
 /**CODING CHALLENGE 3**/
+var tipJohn = [124, 48, 268];
+var finalBill = [];
 
+for(var i = 0; i < tipJohn.length; i++){
+    if(tipJohn[i] < 50){
+        finalBill.push(tipJohn[i]+tipJohn[i]*0.2);
+    }
+    else if(tipJohn[i] >= 50 && tipJohn[i] <= 200){
+        finalBill.push(tipJohn[i]+tipJohn[i]*0.15);
+    }
+    else finalBill.push(tipJohn[i]+tipJohn[i]*0.1);
+}
+
+console.log(tipJohn);
+console.log(finalBill);
+
+//CORRECT
